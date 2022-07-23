@@ -55,13 +55,13 @@ const Footer = () => {
             <div className="footer__title">Contact Center</div>
             <div className="footer__content">
               <p>
-                Contact To Order <strong>0123456789</strong>
+                Contact To Order: <strong>0123456789</strong>
               </p>
               <p>
-                Questions Order <strong>0123456789</strong>
+                Questions Order: <strong>0123456789</strong>
               </p>
               <p>
-                Suggestions, Complains <strong>0123456789</strong>
+                Suggestions, Complains: <strong>0123456789</strong>
               </p>
             </div>
           </div>
