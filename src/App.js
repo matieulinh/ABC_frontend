@@ -8,6 +8,9 @@ import Product from "./pages/Product";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import Register from './pages/Register';
+import Login from './pages/Login';
+
 function App() {
   return (
     <div>
@@ -18,7 +21,7 @@ function App() {
           <Route path="/catalog/:slug" element={<Product />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/cart" element={<Cart />} />
-
+          <Route path="/user" element={<Login />} />
           {/* </Route> */}
         </Routes>
       </div>

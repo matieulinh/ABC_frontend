@@ -93,13 +93,15 @@ const Header = () => {
             </div>
             <div className="header__menu__item header__menu__right__item">
               <Link to="/user">
-                <i className="bx bx-user"></i>
+                <i className="bx bx-user js-user"></i>
               </Link>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    
   );
 };
 
