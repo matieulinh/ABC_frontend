@@ -4,6 +4,11 @@
 
   @include tablet {
     flex-direction: column;
+    padding-top: 100px;
+  }
+
+  @include mobile {
+    padding-top: 50px;
   }
 
   &__filter {

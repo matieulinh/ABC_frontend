@@ -4,12 +4,15 @@ import Helmet from "../components/Helmet";
 import Section, { SectionBody, SectionTitle } from "../components/Section";
 import Grid from "../components/Grid";
 import ProductCard from "../components/ProductCard";
-//import ProductView from "../components/ProductView";
+import ProductView from "../components/ProductView";
+import { useParams } from "react-router-dom";
 
 import productData from "../assets/fake-data/products";
 
-const Product = (props) => {
-  const product = productData.getProductBySlug(props.match.params.slug);
+const Product = () => {
+  let { slug } = useParams();
+  console.log(slug);
+  const product = productData.getProductBySlug(slug);
 
   const relatedProducts = productData.getProducts(8);
 
@@ -20,9 +23,9 @@ const Product = (props) => {
   return (
     <Helmet title={product.title}>
       <Section>
-        {/* <SectionBody>
+        <SectionBody>
           <ProductView product={product} />
-        </SectionBody> */}
+        </SectionBody>
       </Section>
       <Section>
         <SectionTitle>Show more products</SectionTitle>

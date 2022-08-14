@@ -2,6 +2,7 @@
   @include flex(flex-start, space-between);
   margin-right: 150px;
   margin-left: 150px;
+  margin-left: 150px;
 
   @include tablet {
     @include flex(flex-start, center);
@@ -11,6 +12,7 @@
   }
   @include mobile {
     flex-wrap: wrap;
+    margin-top: 50px;
   }
 
   &__list {
